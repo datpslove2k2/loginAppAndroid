@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="414dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#0099ff" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/border"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="                           Password"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="#040404"
+        android:textColorHighlight="#040303"
+        android:textColorHint="#040303"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="522dp" />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/border"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="                             Email"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="#040303"
+        android:textColorHighlight="#070707"
+        android:textColorHint="#090909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="446dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="347dp"
+        android:layout_height="45dp"
+        android:background="#0099ff"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="621dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
